@@ -12,6 +12,10 @@ inspect(trans_data[1:3])
 freq_sets <- apriori(trans_data, parameter=list
 	(support=0.1, maxlen=10, minlen=2, target="frequent itemsets"))
 inspect(sort(freq_sets, by="support")[1:10])
+#举例
+freq1 <- apriori(trans_data[25:26], parameter=list
+	(support=0.1, maxlen=10, minlen=2, target="frequent itemsets"))
+inspect(sort(freq1, by="support")[1:10])
 
 #freq_sets <- eclat(trans_data, parameter=list(support=0.01, maxlen=10, minlen=2))
 
@@ -19,6 +23,11 @@ inspect(sort(freq_sets, by="support")[1:10])
 rules = apriori(trans_data, parameter=list(support=0.1, minlen=2))
 inspect(sort(rules, by="support")[1:10])
 plot(rules)
+#举例
+rules = apriori(trans_data[25:26], parameter=list(support=0.1, minlen=2))
+inspect(sort(rules, by="support")[1:10])
+plot(rules)
+
 
 #对规则进行评价
 sub.rules = subset(rules, subset=rhs%in%"frame"&lift>1)
