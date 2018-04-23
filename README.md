@@ -9,3 +9,6 @@ The homework of data mining
 
 下载数据：https://pan.baidu.com/s/1rayD18hDMD8elzcE9GYs1g
 
+## HomeWork2: 关联规则挖掘
+
+数据集：San Francisco Building Permits
