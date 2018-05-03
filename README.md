@@ -12,3 +12,10 @@ The homework of data mining
 ## HomeWork2: 关联规则挖掘
 
 数据集：San Francisco Building Permits
+
+## HomeWork3: 分类与聚类
+数据集：https://www.kaggle.com/c/titanic/data
+
+分类算法：SVM, AdaBoost
+
+聚类算法：Kmeans, Spectral Clustering
